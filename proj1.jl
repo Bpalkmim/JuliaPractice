@@ -11,7 +11,8 @@ function sumMultiplesOfXOrYBelowZ(x, y, z)
   return sum
 end
 
-value = sumMultiplesOfXOrYBelowZ(3, 5, 1000)
+fileOut = open("proj1.txt", "w")
 
-println("$value")
+write(fileOut, sumMultiplesOfXOrYBelowZ(3, 5, 1000))
 
+close(fileOut)
