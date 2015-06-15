@@ -15,3 +15,14 @@ c = map (f, [3.5, 2.2, 1.7])
 for i in 1:3
   println(c[i])
 end
+
+type Set <: Array{Any}
+end
+
+
+type Group
+	G::Set
+	op::(Set, Set)->Set
+end
+
+
